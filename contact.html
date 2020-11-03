@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Dout Solving</title>
+
+
+    <style>
+    body{
+        padding:100px;
+        }
+    .container {
+        max-width: 626px;
+        }
+
+
+
+    </style>
+
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#"><h3 class="mx-3 border border-light pt-1 px-1">
+        <strong><u><em>EduTech</em></u></strong></h3>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+
+        </ul>
+        <ul class="navbar-nav mr-2">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Menu</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item active ">
+                <a class="nav-link" href="#">Contact Us</a>
+            </li>
+
+            <li class="nav-item active">
+                <a class="nav-link" href="#">About Us </a>
+            </li>
+        </ul>
+        <div class="mx-2">
+            <button class="btn btn-danger mx-2" data-toggle="modal" data-target="#loginModalCenter">Login</button>
+            <button class="btn btn-danger" data-toggle="modal" data-target="#signupModalCenter">Create Account</button>
+        </div>
+
+    </div>
+</nav>
+
+<!-- Login Modal -->
+<div class="modal fade" id="loginModalCenter" tabindex="-1" role="dialog" aria-labelledby="loginModalCenterTitle"
+     aria-hiddensignup>
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="loginModalLongTitle">Login to EduTech</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                               placeholder="Enter email" required>
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                            else.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" class="form-control" id="Password1" placeholder="Password"
+                               required>
+                    </div>
+                    <button type="submit" class="btn btn-primary mx-3">Login</button>
+                    <button type="submit" class="btn btn-outline-primary float-right mx-3" data-toggle="modal"
+                            data-target="#signupModalCenter" data-dismiss="modal">Create Account
+                    </button>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Signup Modal -->
+<div class="modal fade" id="signupModalCenter" tabindex="-1" role="dialog" aria-labelledby="signupModalCenterTitle"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="signupModalLongTitle">Get an EduTech Account</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Enter your full name here</label>
+                        <input type="text" class="form-control" id="name1" placeholder="Enter Full Name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Email address</label>
+                        <input type="email" class="form-control" id="email1"
+                               placeholder="name@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"
+                               required>
+                    </div>
+                    <div class="form-group">
+                        <label for="cexampleInputPassword1">Confirm Password</label>
+                        <input type="password" class="form-control" id="cexampleInputPassword1"
+                               placeholder="Confirm Password" required>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary mx-3">Create Account</button>
+                    <button type="button" class="btn btn-outline-primary float-right mx-3" data-toggle="modal"
+                            data-target="#loginModalCenter" data-dismiss="modal">Login
+                    </button>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container my-4 bg-light ">
+    <h2 class="text-center mb-4"><strong>Contact Us</strong></h2>
+    <form>
+
+        <div class="form-group">
+            <label for="exampleFormControlInput1">Enter your full name here</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter Full Name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="exampleFormControlInput1">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required>
+        </div>
+
+        <div class="form-group">
+            <label for="exampleFormControlSelect1"> Select your language of query</label>
+            <select class="form-control" id="exampleFormControlSelect1" required>
+                <option>English</option>
+                <option>Marathi</option>
+                <option>Hindi</option>
+                <option>Kannad</option>
+                <option>Other</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlSelect2">Subject</label>
+            <select multiple class="form-control" id="exampleFormControlSelect2" required>
+                <option>Web</option>
+                <option>Technology</option>
+                <option>Science</option>
+                <option>Mathematics</option>
+                <option>Other</option>
+            </select>
+        </div>
+        <div class="form-group row">
+            <div class="col-sm-3">Are you a Student</div>
+            <div class="col-sm-9">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck1" >
+                    <label class="form-check-label" for="gridCheck1">
+                        Yes
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlTextarea1">Elaborate your query</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
+        </div>
+        <div class="form-group row">
+            <div class="col-sm-10">
+                <button type="submit" class="btn btn-primary my-4">Submit</button>
+            </div>
+        </div>
+    </form>
+</div>
+<footer class="container-fluid bg-light">
+    <p class="float-right"><a href="#">Back to top</a></p>
+    <p>© 2020-2021 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+</footer>
+<!--</div>-->
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
